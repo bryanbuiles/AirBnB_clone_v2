@@ -6,6 +6,7 @@ from models.city import City
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship
 from models.city import City
+import models
 import os
 
 
@@ -27,7 +28,7 @@ class State(BaseModel, Base):
             lista = []
             # Returns the list of City instances with
             # state_id == to the current State.id
-            for value in storage.all(City).values():
+            for value in models.storage.all(City).values():
                 dict_obj = value.to_dict()
                 if dict_obj["state_id"] == self.id:
                     lista.append(value)
