@@ -36,8 +36,8 @@ class DBStorage:
         """ Return a dict of the objects key = class.id & value = obj"""
         dict_obj = {}
         if cls is None:
-            # list_class = [User, City, Amenity, Place, State, Review]
-            list_class = [City, State]
+            list_class = [User, City, Amenity, Place, State, Review]
+            # list_class = [City, State]
             for classe in list_class:
                 query = self.__session.query(classe).all()
                 for obj in query:
