@@ -1,0 +1,15 @@
+header {
+  background-color: white;
+  height: 70px;
+  width: 100%;
+  border-bottom: 1px solid #cccccc;
+}
+
+header .hero-img {
+  display: block;
+  background-image: url("../images/logo.png");
+  margin-left: 20px;
+  margin-top: 5px;
+  height: 100%;
+  background-repeat: no-repeat; /* Do not repeat the image */
+}
