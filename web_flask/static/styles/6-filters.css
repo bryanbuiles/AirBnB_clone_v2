@@ -59,12 +59,17 @@ body .container .filters .amenities {
   padding-bottom: 20px;
   position: absolute;
   max-height: 300px;
-  scroll-behavior: [ auto ];
+  overflow-y: scroll;
 }
 /* quita los puntos en lista*/
 .popover ul {
   list-style-type: none;
 }
+
+.filters .popover::-webkit-scrollbar {
+  display: none;
+}
+
 .amenities .popover {
   left: 25%;
   padding-top: 20px;
